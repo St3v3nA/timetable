@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
     <form>
@@ -20,8 +21,11 @@
         <br>Time spent on gaming:<br>
         <input value="0" id="num5" type="number" name="num5">
         <br><br>
-        <input class="button" type="button" value="Calculate" onclick="doMath()" />
+        <input class="button" type="button" value="Calculate" onclick="doMath() " /><br><br>
+        <label for="timeLeft">Time Left:</label>
+        <input type="text" id="timeLeft" readonly>
     </form>
+        
 
     <script src="app.js"></script>
 </body>

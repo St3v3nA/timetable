@@ -4,10 +4,15 @@ function doMath() {
     var numThree = document.getElementById('num3').value;
     var numFour = document.getElementById('num4').value;
     var numFive = document.getElementById('num5').value;
-    var theProduct = 24 - parseInt(numOne) - parseInt(numTwo) - parseInt(numThree) - parseInt(numFour) - parseInt(numFive);
-    if (theProduct < 0) {
-    document.write("<p style='font-size: 70px; color: #191919;'>U done messed up!</p>");
-}   else {
-    document.write("<p style='font-size: 70px;'>Time left: " + theProduct + "</p>");
+	let timeLeft = 24 - parseInt(numOne) - parseInt(numTwo) - parseInt(numThree) - parseInt(numFour) - parseInt(numFive);
+	document.getElementById("timeLeft").value = timeLeft + " hours";
 }
-}
+var xValues = ["Sleep", "School", "Chores", "Training", "Gaming"];
+var yValues = ['num1', 'num2', 'num3', 'num4', 'num5'];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
